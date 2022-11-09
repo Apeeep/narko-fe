@@ -1,0 +1,47 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #2B2D42;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    
+    input {
+        width: 70%;
+        height: 30%;
+        padding-left: 15px;
+        border: none;
+        color: #2b2d42;
+        font-family: 'Numans', sans-serif;
+
+        &::placeholder {
+            opacity: .5;
+        }
+        
+        &:focus {
+            outline: none;
+            box-shadow: 1px 1px 1px blue;
+        }
+    }
+
+    .img {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .wishlist, .cart {
+        cursor: pointer;
+
+        &:hover {
+            color: #EF233C;
+            filter: drop-shadow(0 0 2px #2B2D42);
+        }
+    }
+}
